@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:type>2</em:type> <!-- 2 : Extension -->
+        <em:id>zotero-classify-plugin@swtr.nl</em:id>
+        <em:version>1.0</em:version>
+        <em:name>Zotero Classify Articles</em:name>
+        <em:description>Zotero plugin to tag journal articles with the discipline(s) of the journal in which it was published.</em:description>
+        <em:creator>SWTR</em:creator>
+        <em:targetApplication>
+            <Description>
+                <!-- Firefox -->
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>7.0</em:minVersion>
+                <em:maxVersion>13.0a1</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+    </Description>
+</RDF>

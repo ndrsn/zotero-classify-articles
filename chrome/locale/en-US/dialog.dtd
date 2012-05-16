@@ -1,0 +1,4 @@
+<!ENTITY zotero-classify-articles.statsTotal "Total number of journal articles">
+<!ENTITY zotero-classify-articles.statsSuccess "Successfully classified">
+<!ENTITY zotero-classify-articles.statsFailed "Failed to classify">
+<!ENTITY zotero-classify-articles.statsNoPubTitle "No publication title">

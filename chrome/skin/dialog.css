@@ -1,0 +1,10 @@
+row label
+{
+  margin-bottom: .2em;
+  font-family: sans-serif;
+}
+
+row label:first-child 
+{
+  margin-right: 2em;
+}

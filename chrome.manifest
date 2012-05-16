@@ -1,0 +1,4 @@
+content   zotero-classify-articles                 chrome/content/
+skin      zotero-classify-articles   classic/1.0   chrome/skin/
+locale    zotero-classify-articles   en-US         chrome/locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://zotero-classify-articles/content/overlay.xul

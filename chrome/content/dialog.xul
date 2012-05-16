@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://zotero-classify-articles/skin/dialog.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://zotero-classify-articles/locale/dialog.dtd">
+
+<dialog id="zotero-classify-articles-stats-dialog" title="Classification statistics"
+        buttons="accept" ondialogaccept="return doOK();"
+        onload="setStats();"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script>
+    function doOK() {
+      return true;
+    }
+    function setLabel (lbl, val)
+    {
+      var label = document.getElementById(lbl);
+      if (label) label.setAttribute('value', val);
+    }
+    function setStats () {
+      var stats = window.arguments[0];
+      setLabel('zotero-classify-articles-total-number-items', stats['total']);
+      setLabel('zotero-classify-articles-successfully-classified', stats['classified']);
+      setLabel('zotero-classify-articles-failed-to-classify', stats['unclassified']);
+      setLabel('zotero-classify-articles-no-publication-title', stats['nopubtitle']);
+
+      return true;
+    }
+  </script>
+  <dialogheader title="Statistics" description="Results of classification run"/>
+  <groupbox>
+    <caption label="Statistics"/>
+    <grid>
+      <columns>
+        <column flex="2" />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row>
+          <label value="&zotero-classify-articles.statsTotal;" />
+          <label id="zotero-classify-articles-total-number-items" value="0" />
+        </row>
+        <row>
+          <label value="&zotero-classify-articles.statsSuccess;" />
+          <label id="zotero-classify-articles-successfully-classified" value="0" />
+        </row>
+        <row>
+          <label value="&zotero-classify-articles.statsFailed;" />
+          <label id="zotero-classify-articles-failed-to-classify" value="0" />
+        </row>
+        <row>
+          <label value="&zotero-classify-articles.statsNoPubTitle;" />
+          <label id="zotero-classify-articles-no-publication-title" value="0" />
+        </row>
+      </rows>
+    </grid>
+  </groupbox>
+</dialog>

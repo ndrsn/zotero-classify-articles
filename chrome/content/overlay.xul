@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://zotero-classify-articles/locale/overlay.dtd">
+<overlay id="zotero-classify-articles-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="chrome://zotero/content/include.js"/>
+  <script src="plugin.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="zotero-classify-articles-strings" src="chrome://zotero-classify-articles/locale/overlay.properties"/>
+  </stringbundleset>
+  <menupopup id="zotero-tb-actions-popup">
+    <menuitem id="zotero-classify-articles-menuitem" label="&zotero-classify-articles.menuLabel;" insertafter="zotero-tb-actions-timeline"/>
+  </menupopup>
+</overlay>
