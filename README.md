@@ -23,4 +23,5 @@ This plugin was developed by [The Hague Center of Strategic Studies](http://www.
 
 - Stephan De Spiegeleire
 - Tim Sweijs
+- Eline Chivot
 - Jona Andersen
