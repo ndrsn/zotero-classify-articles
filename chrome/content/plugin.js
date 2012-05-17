@@ -115,6 +115,7 @@ Zotero.Classify = {
     
     stats["total"] = items.length;
 
+    Zotero.DB.beginTransaction();
     for (var i = 0; i < items.length; i++) {      
       var item = items[i];
       var publication = item.getField('publicationTitle');
@@ -134,7 +135,9 @@ Zotero.Classify = {
       if (i % 100 == 0) {
         logmsg("Item #" + i);
       }
-    }    
+    } 
+    Zotero.DB.commitTransaction();  
+ 
     window.openDialog(
       "chrome://zotero-classify-articles/content/dialog.xul",
       "zotero-classify-articles-stats-dialog",

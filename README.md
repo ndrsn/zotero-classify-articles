@@ -13,9 +13,7 @@ For instance, suppose the article *The European Security Strategy: Multilateral 
 
 ## Notes
 
-Due to Zotero's handling of tags, executing the plugin's classification while having an open tag window will likely cause your system to run out of memory. Keep the tag window closed and nobody gets hurt. This really should be fixed, but it involves tampering with Zotero's internals.
-
-The code was written to meet a deadline, and so could stand to be improved in many ways.
+The code was written to meet a deadline, and so could stand to be improved in many ways. Please contribute if you can.
 
 ## Credits
 
